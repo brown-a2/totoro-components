@@ -15,12 +15,13 @@ if (!defined('ABSPATH')) {
 }
 
 // Include necessary files
-include_once(plugin_dir_path(__FILE__) . 'includes/Totoro-Components.php');
-include_once(plugin_dir_path(__FILE__) . 'includes/Image-Management.php');
+include_once(plugin_dir_path(__FILE__) . 'inc/Totoro-Components.php');
+include_once(plugin_dir_path(__FILE__) . 'inc/Image-Management.php');
 
 // Initialize the plugin
 function totoro_components_init() {
     $plugin = new Totoro_Components();
     $plugin->run();
 }
+
 add_action('plugins_loaded', 'totoro_components_init');

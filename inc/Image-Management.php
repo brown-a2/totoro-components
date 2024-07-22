@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-class Totoro_Custom_Class {
+class Image_Management {
 
     public function __construct() {
         // Custom class initialization code here
@@ -12,7 +12,6 @@ class Totoro_Custom_Class {
 
     public function run() {
         // Hook into WordPress actions and filters for custom functionality
-        add_action('init', [$this, 'custom_functionality']);
         add_filter('the_content', [$this, 'add_webp_to_image_urls']);
     }
 
