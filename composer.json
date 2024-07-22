@@ -1,0 +1,14 @@
+{
+    "name": "brown-a2/totoro-components",
+    "description": "Helpful shared tools for the Totoro platform",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "^1.0"
+    },
+    "authors": [],
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
